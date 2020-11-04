@@ -1,0 +1,280 @@
+.home-page {
+	position: relative;
+	overflow: hidden;
+	.full-screen-swiper {
+		background-size: cover;
+		background-position: center;
+		height: auto;
+		width: 100%;
+		background: url('https://lafka.althemist.com/fastfood/wp-content/uploads/sites/2/2019/05/rays-dust.png?id=3724');
+		position: relative;
+		padding-bottom: 60px;
+		margin-top: 250px;
+		background-color: $warning;
+	}
+	.swiper-wraper {
+		@include desk-media {
+			width: 90%;
+		}
+		.swiper-slide-wraper {
+			display: flex;
+			background-color: transparent;
+			.bg-img {
+				background-position: center;
+				background-size: cover;
+				max-width: 50%;
+				height: auto;
+				background-repeat: no-repeat;
+			}
+			.info {
+				width: 50%;
+				text-align: center;
+			}
+			h3 {
+				font-weight: bold;
+				color: #4d2c21;
+				font-size: 2rem;
+				padding-top: 30px;
+			}
+			p {
+				font-weight: bold;
+				color: #fff;
+				font-size: 3rem;
+				padding: 30px 0;
+			}
+			.menu-link {
+				padding: 15px 30px;
+				background-color: $danger;
+				color: #fff;
+				display: inline-block;
+				border-radius: 30px;
+				transition: ease $speed;
+				&:hover {
+					background-color: #222;
+				}
+			}
+		}
+	}
+	.main-intro {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: #fff;
+		text-align: center;
+		.main-info {
+			max-width: 50%;
+			margin: 80px auto 60px auto;
+			span {
+				color: #e4584b;
+				font-weight: bold;
+				font-size: 1.5rem;
+				margin-bottom: 20px;
+				display: inline-block;
+			}
+			h2 {
+				font-weight: bold;
+				font-size: 3rem;
+			}
+			p {
+				margin: 20px 0;
+				color: #999;
+				font-weight: bold;
+				line-height: 2;
+			}
+		}
+		a.main-link {
+			padding: 15px 25px;
+			background-color: #333333;
+			color: #fff;
+			transition: ease $speed;
+			border-radius: 30px;
+			margin-bottom: 60px;
+			&:hover {
+				background-color: #222;
+			}
+		}
+	}
+	.battle-ground {
+		background-color: #3c2117;
+		padding: 60px;
+		text-align: center;
+		margin-bottom: 40px;
+		h2 {
+			font-weight: bold;
+			color: #fff;
+			font-size: 3rem;
+			margin-bottom: 60px;
+		}
+		.photos {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			p {
+				font-family: 'Special Elite', cursive;
+				color: #e4584b;
+				font-size: 1.5rem;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+			span {
+				font-size: 1rem;
+				font-weight: bold;
+				color: #fff;
+			}
+		}
+		.item:nth-child(2) {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			img {
+				height: 200px;
+				width: 200px;
+				filter: invert(100%);
+			}
+			&:after {
+				content: 'VS';
+				font-family: 'Special Elite', cursive;
+				font-weight: bold;
+				font-size: 5rem;
+				letter-spacing: 5px;
+				color: #fccc4c;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -35%);
+			}
+		}
+	}
+	.sub-intro {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: #fff;
+		text-align: center;
+		.sub-info {
+			max-width: 50%;
+			margin: 80px auto 60px auto;
+			h2 {
+				font-weight: bold;
+				font-size: 3rem;
+			}
+			p {
+				margin: 20px 0;
+				color: #999;
+				font-weight: bold;
+				line-height: 2;
+			}
+		}
+	}
+	.offers-group {
+		padding: 30px 15px;
+		margin-bottom: 60px;
+		h2 {
+			margin: 0px 0 80px 0;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 3rem;
+			font-weight: bold;
+		}
+		.offers {
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+			.item {
+				padding: 15px;
+				span {
+					widows: 100px;
+					height: 100px;
+					color: #a78151;
+					font-size: 5rem !important;
+					display: inline-block;
+				}
+				.flaticon-034-waiter::before,
+				.flaticon-047-menu:before,
+				.flaticon-038-take-away:before,
+				.flaticon-031-delivery:before {
+					font-size: 5rem;
+				}
+				h5 {
+					font-weight: bold;
+					margin: 15px 0;
+					font-size: 1.5rem;
+				}
+				p {
+					color: #666;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+	.subscription {
+		background-color: #fccc4c;
+		.subscript-wraper {
+			padding: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			h2 {
+				font-weight: bold;
+				font-size: 2rem;
+				letter-spacing: 2px;
+				color: #95601c;
+			}
+			p {
+				color: #95601c;
+			}
+			.send {
+				display: flex;
+				justify-content: space-between;
+				height: 100%;
+				width: 50%;
+				border-radius: 30px;
+				background-color: #fff;
+				position: relative;
+				input {
+					background-color: transparent;
+					margin-left: 30px;
+					padding: 15px;
+					border: none;
+					outline: none;
+					font-size: 1.2rem;
+					color: #666;
+				}
+				a {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					width: 20%;
+					text-align: center;
+					color: #fff;
+					background-color: #e4584b;
+					border-radius: 30px;
+					font-size: 1.2rem;
+					transition: ease $speed;
+					&:hover {
+						background-color: #222;
+					}
+				}
+				i {
+					position: absolute;
+					top: 17px;
+					left: 20px;
+					color: #666;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}

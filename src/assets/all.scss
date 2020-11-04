@@ -1,0 +1,21 @@
+/* ========== Helpers ========== */
+@import './helpers/reset.scss';
+@import './helpers/mixin.scss';
+@import './helpers/variables.scss';
+
+/* ========= Components ======== */
+@import './client/components/header.scss';
+@import './client/components/footer.scss';
+@import './client/components/card.scss';
+@import './client/components/pagination.scss';
+
+/* ========= Views ======== */
+@import './client/views/home.scss';
+@import './client/views/about.scss';
+@import './client/views/menu.scss';
+@import './client/views/blog.scss';
+@import './client/views/contact.scss';
+@import './client/views/payment.scss';
+@import './client/views/cart.scss';
+@import './client/views/user.scss';
+@import './client/views/account.scss';
